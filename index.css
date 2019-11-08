@@ -1,0 +1,49 @@
+.text-platzi {
+    color: #97c93e !important;
+}
+
+#header img{
+    width: 80px;
+}
+
+#main .carousel-inner img {
+    max-height: 70vh;
+    /*para que ajustar la img, ya que se veia alargada*/
+    object-fit: cover;
+    filter: grayscale(70%)
+}
+
+#carousel {
+    position: relative;
+}
+
+#carousel .overlay {
+    /*z-indez: 1 sirve para controlar el orden de los elementos,
+    mientras mayor es el valor mayor es la prioridad*/
+    z-index: 1;
+    /*para que el overlay se expanda por todo el carousel */
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+/*para que el texto este centrado verticalemente
+tenmos qe hacer que el container ocupe todo el alto del overlay
+ya que el container va a ocupar el alto de su contenido, exceptuando
+que nosotros le indiquemos el height
+y de esta misma manera para el row*/
+#carousel .overlay .container,
+#carousel .overlay .row{
+    height: 100%;
+}
+#footer {
+    background: #19303c;
+}
+
+#footer a{
+    color: aliceblue;
+}

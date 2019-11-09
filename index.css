@@ -2,6 +2,16 @@
     color: #97c93e !important;
 }
 
+.btn-platzi {
+    background-color: #97c93e !important;
+    color: white;
+}
+
+.btn-platzi:hover {
+    background-color: #83b529 !important;
+    color: white;
+}
+
 #header img{
     width: 80px;
 }
@@ -39,6 +49,10 @@ y de esta misma manera para el row*/
 #carousel .overlay .container,
 #carousel .overlay .row{
     height: 100%;
+}
+
+#speakers {
+    margin-top: 4px;
 }
 #footer {
     background: #19303c;
